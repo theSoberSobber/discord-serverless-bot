@@ -59,3 +59,8 @@ After your credentials are added, go ahead and run the app:
 ```
 node app.js
 ```
+
+## Cron Job Deployment
+
+- Deployed on pipedream to run every 1 hour
+- [Deployment](https://pipedream.com/@mesosan/serverless-dc-bot-p_brCyAGa)

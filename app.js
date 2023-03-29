@@ -208,6 +208,21 @@ app.post("/interactions", async function (req, res) {
   }
 });
 
+import {Client, GatewayIntentBits} from 'discord.js';
+
+let channelId;
+
+app.get("/cron", async function (req, res) {
+  const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+  client.login(process.env.DISCORD_TOKEN);
+  client.on('ready', () => {
+    client.channels.fetch(`${channelId}`).then(channel => {
+      channel.send("Hello!");
+    });
+  });
+  res.send("kar diya");
+});
+
 app.listen(PORT, () => {
   console.log("Listening on port", PORT);
 });
