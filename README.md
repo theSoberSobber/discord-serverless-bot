@@ -3,6 +3,8 @@
 This project contains a basic discord bot that runs serverlessly and hence saves up on computing costs.
 It doesn't need to be listening always and is triggered with the help of a webhook from the application and is verified using the Public key and the discord signature hash.
 
+[<img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="175px" />](https://glitch.com/edit/#!/import/github/theSoberSobber/discord-serverless-bot)
+
 ## Project structure
 Below is a basic overview of the project structure:
 
